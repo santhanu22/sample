@@ -1,0 +1,178 @@
+.head{
+    color: white;
+    text-align: center;
+    background-color: gray;
+    width: auto;
+    height: 50px;
+    font-weight: bold;
+}
+.tab{
+    width: auto;
+    height: 600px;
+    padding-top: 20px;
+    /* background: rgb(206,122,50);
+    background: linear-gradient(212deg, rgba(206,122,50,1) 0%, rgba(58,106,159,1) 100%); */
+    background-image: url('file:///C:/Users/santh/Downloads/0_ljyW1QItACx67HVd.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+} 
+.form{
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 400px;
+    height: auto;
+    margin-top: 30px;
+    margin-left: 500px;
+    padding: 30px;   
+} 
+
+ input{
+    color: white;
+}
+ .ab{
+    border: none;
+    outline-style: none;
+    background: rgba(0, 0, 0, 0.0);
+    outline: none; 
+    box-shadow: none !important;
+    border-bottom: 2px solid silver;  
+    color: aqua;
+    
+}
+.ab:focus{
+    background: none;
+}
+.dis.none{
+    display: none; 
+}
+.row{
+    padding-top: 20px;
+}
+.pose{
+    margin-right: -200px;
+    border: 1px ; 
+}
+.btn{
+    color: #03e9f4;
+}
+button{
+    padding: 10px;
+    border: 1px ;
+    /* transition: 0.5s; */
+    overflow: hidden;
+    color: #03e9f4;
+} 
+button:hover{
+    background-color: #03e9f4;
+    color: #03e9f4;
+    box-shadow: 0 0 5px  #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4; 
+     /* -webkit-box-reflect:below 1px linear-gradient(transparent, #0005); */
+}
+button:nth-child(1){
+    filter: hue-rotate(270deg);
+}
+button:nth-child(2){
+    filter: hue-rotate(110deg);
+}
+span{
+    position: absolute;
+    display: block;
+}
+span:nth-child(1){
+    top: 0px;
+    left: 0; 
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#03e9f4);
+    animation: animate1 1s linear infinite;
+}
+@keyframes animate1{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+span:nth-child(2){
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#03e9f4);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate2{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#03e9f4);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+@keyframes animate3{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#03e9f4);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes animate4{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+} 
+
+/* label{
+position:absolute;
+top: 0;
+left: 0; 
+font-size: 16px;
+transform: .5s;
+padding: 20px 0;
+color: #03e9f4;
+pointer-events: none;
+}
+input:focus ~ label,
+input:valid ~ label{
+top: 10px;
+left: 0;
+color: #03e9f4;
+font-size: 12px;
+animation: anime linear ;
+animation-iteration-count: 1;
+}
+@keyframes anime{
+form {bottom: 0px;}
+to{ bottom: -20;}
+
+} */
